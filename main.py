@@ -33,16 +33,6 @@ def calculator():
     number_2 = float(input("What's the next number?: "))
     result = operations[operation_symbol]
     answer = result(number_1, number_2)
-    # if operation_symbol == "+":
-    #   operations[operation_symbol] = add(number_1, number_2)
-    # elif operation_symbol == "-":
-    #   operations[operation_symbol] = subtract(number_1, number_2)
-    # elif operation_symbol == "*":
-    #   operations[operation_symbol] = multiply(number_1, number_2)
-    # elif operation_symbol == "/":  
-    #   operations[operation_symbol] = divide(number_1, number_2)
-    # else:
-    #   print("Invalid operation")
     print(f"{number_1} {operation_symbol} {number_2} = {answer}")
     again = input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calaculation ").lower()
     if again == "y":
